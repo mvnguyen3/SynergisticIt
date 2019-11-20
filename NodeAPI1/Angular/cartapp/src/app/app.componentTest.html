@@ -1,0 +1,46 @@
+
+
+<div style="text-align:center">
+  <hr>
+  <h2>
+    Angular Day 2
+  </h2>
+
+  <b>{{dynamicMsg}}</b> <br>
+  <b style="color:red"> {{message}} </b> <br>
+</div>
+
+  <div> 
+  <table style="margin-left:auto;margin-right:auto;"> 
+    <tr> 
+      <th>Input</th>
+      <th>Result</th>
+    </tr>
+   <tr>
+    <td>
+      {{factInput}}
+    </td>
+    <td> 
+     {{factResult}}
+    </td>
+</tr>
+  </table>
+  <div id="cookieTable" style="display:none"> 
+  <table  style="border:1px solid black; margin-left:auto;margin-right:auto;border-collapse: collapse"> 
+    <tr> 
+      <th>Input</th>
+      <th>Result</th>
+    </tr>
+   <tr *ngFor="let data of mapCookie | keyvalue">
+    <td>
+        {{data.key}}
+    </td>
+    <td> 
+      {{data.value}}
+    </td>
+    </tr>
+  </table>
+  </div>
+    <hr>
+  </div>
+ 
