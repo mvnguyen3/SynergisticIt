@@ -34,16 +34,16 @@
 //7. what will the following code output?
 
 const arr = [10, 12, 15, 21];
-for (var i = 0; i < arr.length; i++) {
+
+// 
+// let is lexical scope variable
+for (let i = 0; i < arr.length; i++) {
   setTimeout( ()=> {
     console.log('Index: ' + i + ', element: ' + arr[i]);
   },299);
 }
 
 
-for(var i=0; i<arr.length; i++){
-    console.log('Index: ' + i + ', element: ' + arr[i]);
-}
 
 
 
